@@ -1,0 +1,50 @@
+ body {
+            background-image: url(background.jpeg);
+            background-size: cover;
+            text-align: center;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .google{
+            font-size: 90px;
+            font-weight: 600;
+            margin-top: 40px;
+            margin-bottom: 30px;
+        }
+        .searching{
+            background-color: aliceblue;
+            width: 500px;
+            border-radius: 20px;
+        }
+        #search-bar {
+            width: 50%;
+            padding-right: 208px;
+            border-radius: 25px;
+            border: none;
+            background-color: aliceblue;
+           
+        }
+        button{
+            border-radius: 20px;
+            height: 35px;
+            width: 35px;
+            color: aliceblue;
+            border-color:rgb(147, 150, 152);
+            align-items: self-end;
+            
+        }
+        .shortcut {
+            display: inline-block;
+            margin: 10px;
+            text-align: center;
+            border-radius: 30px;
+        }
+        .shortcut img {
+            width: 48px;
+            height: 48px;
+            border-radius: 30px;
+        }
+        .shortcuts-container {
+            margin-top: 20px;
+            border-radius: 30px;
+        }

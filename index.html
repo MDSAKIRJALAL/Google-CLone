@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Clone</title>
+   <link rel="stylesheet" href="Google.css">
+</head>
+<body>
+       <h1 class="google">Google</h1>
+   <center><div class="searching"><input type="text" id="search-bar" placeholder="Search Google or type a URL" style="height: 30px;border-color: aliceblue;">
+        <button onclick="searchGoogle()">🔎</button></div></center> 
+    <div class="shortcuts-container">
+        <div class="shortcut"><a href="https://www.youtube.com"><img src="youtube.png" alt="YouTube"></a><p>YouTube</p></div>
+        <div class="shortcut"><a href="https://www.facebook.com"><img src="facebook.jpeg" alt="Facebook"></a><p>Facebook</p></div>
+        <div class="shortcut"><a href="https://www.instagram.com"><img src="instagram.jpeg" alt="Instagram"></a><p>Instagram</p></div>
+        <div class="shortcut"><a href="https://www.jiohotstar.com"><img src="hotstar.png" alt="Jio Hotstar"></a><p>Jio Hotstar</p></div>
+        <div class="shortcut"><a href="https://chromewebstore.google.com"><img src="store.png" alt="Web Store"></a><p>Web Store</p></div>
+        <div class="shortcut"><a href="https://www.allcomics.com"><img src="comic.png" alt="All Comics"></a><p>All Comics</p></div>
+        <div class="shortcut"><a href="#"><img src="add.png" alt="Add Shortcut"></a><p>Add Shortcut</p></div>
+    </div>
+     <script>
+        alert("Welcome to My Google!")
+        function searchGoogle() {
+      let query = document.getElementById("search-bar").value.trim();
+      if (query !== "") {
+        let googleUrl = "https://www.google.com/search?q=" + encodeURIComponent(query);
+        window.open(googleUrl, "_blank");
+      } else {
+        alert("Please enter a search term.");
+      }
+    }
+    </script>
+</body>
+</html>
